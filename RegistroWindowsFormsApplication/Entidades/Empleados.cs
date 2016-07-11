@@ -27,5 +27,22 @@ namespace Entidades
 
         }
 
+        public Empleados(string Nombre, string Direccion, string Telefono, string Celular, string Cedula, string Cargo, float Sueldo, float Incentivo, bool Activo)
+        {
+            this.Activo = Activo;
+            this.Cargo = Cargo;
+            this.Cedula = Cedula;
+            this.Celular = Celular;
+            this.Direccion = Direccion;
+            //this.Fecha = Fecha;
+            this.Incentivo = Incentivo;
+            this.Sueldo = Sueldo;
+            this.Nombre = Nombre;
+            this.Telefono = Telefono;
+            
+
+
+        }
+
     }
 }
