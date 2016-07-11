@@ -11,7 +11,7 @@ namespace Entidades
     {
         [Key]
         public int IdEmpleado { get; set; }
-        public DateTime Fecha { get; set; }
+       // public DateTime Fecha { get; set; }
         public string Nombre { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
@@ -27,9 +27,9 @@ namespace Entidades
 
         }
 
-        public Empleados(string Nombre, string Direccion, string Telefono, string Celular, string Cedula, string Cargo, float Sueldo, float Incentivo, bool Activo)
+        public Empleados(/*DateTime Fecha*/string Nombre, string Direccion, string Telefono, string Celular, string Cedula, string Cargo, float Sueldo, float Incentivo /*bool Activo*/)
         {
-            this.Activo = Activo;
+            //this.Activo = Activo;
             this.Cargo = Cargo;
             this.Cedula = Cedula;
             this.Celular = Celular;

@@ -21,13 +21,18 @@ namespace RegistroWindowsFormsApplication
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Empleados empleado = new Empleados("Andres Fernando", "Salcedo RD", "809-577-4546", "809-564-4241", "405-1547893-2", "El Jefe", 85000.25f, 15.2f, true);
-            using (var db = new RHHDb())
-            {
-                db.Empleado.Add(empleado);
-                db.SaveChanges();
-                db.Dispose();
-            }
+            Empleados empleado = new Empleados();
+            empleado.Activo = true;
+            empleado.Cargo = "El Jefe";
+            empleado.Cedula = "452-1235478-1";
+            empleado.Celular = "809-577-4648";
+            empleado.Direccion = "Salcedo RD";
+            empleado.Incentivo = 15.6f;
+            empleado.Nombre = "Andres FErnando";
+            empleado.Sueldo = 58000.23f;
+            empleado.Telefono = "809-577-4646";
+            
+            
         }
     }
 }
