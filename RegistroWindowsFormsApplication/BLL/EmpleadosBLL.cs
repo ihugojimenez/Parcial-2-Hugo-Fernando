@@ -67,9 +67,10 @@ namespace BLL
         public static List<Empleados> getList()
         {
             List<Empleados> lista = new List<Empleados>();
+            var db = new RHHDb();
+            lista = db.Empleado.ToList();
 
-
-            return lista.ToList();
+            return lista;
         }
         
 

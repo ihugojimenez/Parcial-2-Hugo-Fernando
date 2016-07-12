@@ -30,6 +30,8 @@ namespace RegistroWindowsFormsApplication
 
         private void registrarEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            RegisterForm rf = new RegisterForm();
+            rf.Show();
            
         }
 
