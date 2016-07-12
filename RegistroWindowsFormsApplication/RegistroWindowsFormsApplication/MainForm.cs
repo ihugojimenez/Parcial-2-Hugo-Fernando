@@ -36,5 +36,16 @@ namespace RegistroWindowsFormsApplication
             
             
         }
+
+        private void registrarEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaForm cf = new ConsultaForm();
+            cf.Show();
+        }
     }
 }
