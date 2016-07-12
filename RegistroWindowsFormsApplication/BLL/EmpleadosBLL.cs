@@ -31,7 +31,46 @@ namespace BLL
             return Hecho;
 
         }
+
+        public static Empleados Buscar(int id)
+        {
+            var db = new RHHDb();
+
+            return db.Empleado.Find(id);
+        }
+
+        public static void Eliminar(int id)
+        {
+            var db = new RHHDb();
+
+            Empleados e = (from p in db.Empleado
+                           where p.IdEmpleado == id
+                           select p).FirstOrDefault();
+
+            db.Empleado.Remove(e);
+            db.SaveChanges();
+        }
         
+        public static void Modificar(int id)
+        {
+            var db = new RHHDb();
+
+            Empleados e = (from p in db.Empleado
+                           where p.IdEmpleado == id
+                           select p).FirstOrDefault();
+
+
+            
+
+        }
+
+        public static List<Empleados> getList()
+        {
+            List<Empleados> lista = new List<Empleados>();
+
+
+            return lista.ToList();
+        }
         
 
     }

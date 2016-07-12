@@ -1,4 +1,4 @@
-﻿using DAL;
+﻿using BLL;
 using Entidades;
 using System;
 using System.Collections.Generic;
@@ -31,6 +31,8 @@ namespace RegistroWindowsFormsApplication
             empleado.Nombre = "Andres FErnando";
             empleado.Sueldo = 58000.23f;
             empleado.Telefono = "809-577-4646";
+
+            EmpleadosBLL.Eliminar(1);
             
             
         }
