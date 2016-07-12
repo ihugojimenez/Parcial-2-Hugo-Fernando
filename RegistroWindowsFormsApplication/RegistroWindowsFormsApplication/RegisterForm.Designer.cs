@@ -233,7 +233,7 @@
             // SaveButton
             // 
             this.SaveButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.Image")));
-            this.SaveButton.Location = new System.Drawing.Point(299, 325);
+            this.SaveButton.Location = new System.Drawing.Point(259, 354);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(60, 54);
@@ -295,7 +295,7 @@
             // UpdateButton
             // 
             this.UpdateButton.Image = ((System.Drawing.Image)(resources.GetObject("UpdateButton.Image")));
-            this.UpdateButton.Location = new System.Drawing.Point(299, 128);
+            this.UpdateButton.Location = new System.Drawing.Point(387, 26);
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(60, 54);
