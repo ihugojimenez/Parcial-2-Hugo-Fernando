@@ -142,6 +142,8 @@ namespace RegistroWindowsFormsApplication
             empleado.Nombre = "Hugo Jimenez";
             empleado.Sueldo = 8500.2222f;
             empleado.Telefono = "809-577-6469";
+            /*empleado.Fecha.ToLongDateString();
+            empleado.Fecha = Convert.ToDateTime(FechaTextBox.Text);*/
             EmpleadosBLL.Insertar(empleado);
             limpiar();
         }

@@ -101,7 +101,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(9, 113);
+            this.label3.Location = new System.Drawing.Point(3, 113);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 17);
@@ -110,7 +110,7 @@
             // 
             // TelTextBox
             // 
-            this.TelTextBox.Location = new System.Drawing.Point(68, 113);
+            this.TelTextBox.Location = new System.Drawing.Point(71, 113);
             this.TelTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.TelTextBox.Name = "TelTextBox";
             this.TelTextBox.Size = new System.Drawing.Size(129, 20);
@@ -233,7 +233,7 @@
             // SaveButton
             // 
             this.SaveButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.Image")));
-            this.SaveButton.Location = new System.Drawing.Point(259, 354);
+            this.SaveButton.Location = new System.Drawing.Point(269, 162);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(60, 54);
@@ -295,7 +295,7 @@
             // UpdateButton
             // 
             this.UpdateButton.Image = ((System.Drawing.Image)(resources.GetObject("UpdateButton.Image")));
-            this.UpdateButton.Location = new System.Drawing.Point(387, 26);
+            this.UpdateButton.Location = new System.Drawing.Point(355, 11);
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(60, 54);
@@ -308,7 +308,7 @@
             // AddButton
             // 
             this.AddButton.Image = ((System.Drawing.Image)(resources.GetObject("AddButton.Image")));
-            this.AddButton.Location = new System.Drawing.Point(299, 26);
+            this.AddButton.Location = new System.Drawing.Point(269, 10);
             this.AddButton.Margin = new System.Windows.Forms.Padding(2);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(60, 54);

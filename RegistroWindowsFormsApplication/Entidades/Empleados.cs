@@ -22,6 +22,8 @@ namespace Entidades
         public double Incentivo { get; set; }
         public bool Activo { get; set; }
 
+        
+
         public Empleados()
         {
 
