@@ -51,10 +51,10 @@
             this.SaveButton = new System.Windows.Forms.Button();
             this.SearchButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.IdTextBox = new System.Windows.Forms.TextBox();
             this.IdErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.UpdateButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IdErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -268,18 +268,6 @@
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
-            // button2
-            // 
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(394, 153);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(63, 54);
-            this.button2.TabIndex = 21;
-            this.button2.Text = "Actualizar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -303,14 +291,27 @@
             // 
             this.IdErrorProvider.ContainerControl = this;
             // 
+            // UpdateButton
+            // 
+            this.UpdateButton.Image = ((System.Drawing.Image)(resources.GetObject("UpdateButton.Image")));
+            this.UpdateButton.Location = new System.Drawing.Point(407, 153);
+            this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
+            this.UpdateButton.Name = "UpdateButton";
+            this.UpdateButton.Size = new System.Drawing.Size(60, 54);
+            this.UpdateButton.TabIndex = 24;
+            this.UpdateButton.Text = "Modificar";
+            this.UpdateButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.UpdateButton.UseVisualStyleBackColor = true;
+            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 418);
+            this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.SaveButton);
@@ -364,9 +365,9 @@
         private System.Windows.Forms.Button SaveButton;
         private System.Windows.Forms.Button SearchButton;
         private System.Windows.Forms.Button DeleteButton;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox IdTextBox;
         private System.Windows.Forms.ErrorProvider IdErrorProvider;
+        private System.Windows.Forms.Button UpdateButton;
     }
 }

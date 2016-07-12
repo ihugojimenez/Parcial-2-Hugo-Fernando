@@ -51,7 +51,7 @@ namespace BLL
             db.SaveChanges();
         }
         
-        public static void Modificar(int id)
+        public static Empleados Modificar(int id)
         {
             var db = new RHHDb();
 
@@ -59,7 +59,7 @@ namespace BLL
                            where p.IdEmpleado == id
                            select p).FirstOrDefault();
 
-
+            return e;
             
 
         }
