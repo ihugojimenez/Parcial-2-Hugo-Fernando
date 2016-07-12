@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegisterForm));
             this.label1 = new System.Windows.Forms.Label();
             this.NameTextBox = new System.Windows.Forms.TextBox();
@@ -52,7 +53,9 @@
             this.DeleteButton = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.IdTextBox = new System.Windows.Forms.TextBox();
+            this.IdErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.IdErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -218,6 +221,7 @@
             this.SaveButton.Text = "Guardar";
             this.SaveButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // SearchButton
             // 
@@ -229,6 +233,7 @@
             this.SearchButton.Text = "Buscar";
             this.SearchButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // DeleteButton
             // 
@@ -256,25 +261,29 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(664, 34);
+            this.label10.Location = new System.Drawing.Point(644, 36);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(22, 20);
             this.label10.TabIndex = 22;
             this.label10.Text = "Id";
             // 
-            // textBox1
+            // IdTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(692, 34);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(32, 22);
-            this.textBox1.TabIndex = 23;
+            this.IdTextBox.Location = new System.Drawing.Point(672, 36);
+            this.IdTextBox.Name = "IdTextBox";
+            this.IdTextBox.Size = new System.Drawing.Size(32, 22);
+            this.IdTextBox.TabIndex = 23;
+            // 
+            // IdErrorProvider
+            // 
+            this.IdErrorProvider.ContainerControl = this;
             // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(822, 514);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.DeleteButton);
@@ -300,6 +309,7 @@
             this.Controls.Add(this.label1);
             this.Name = "RegisterForm";
             this.Text = "Registro Empleados";
+            ((System.ComponentModel.ISupportInitialize)(this.IdErrorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -330,6 +340,7 @@
         private System.Windows.Forms.Button DeleteButton;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox IdTextBox;
+        private System.Windows.Forms.ErrorProvider IdErrorProvider;
     }
 }
