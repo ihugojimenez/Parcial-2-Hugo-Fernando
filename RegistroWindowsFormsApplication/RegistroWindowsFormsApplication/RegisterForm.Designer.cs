@@ -55,6 +55,7 @@
             this.IdTextBox = new System.Windows.Forms.TextBox();
             this.IdErrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.UpdateButton = new System.Windows.Forms.Button();
+            this.AddButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.IdErrorProvider)).BeginInit();
             this.SuspendLayout();
             // 
@@ -232,7 +233,7 @@
             // SaveButton
             // 
             this.SaveButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveButton.Image")));
-            this.SaveButton.Location = new System.Drawing.Point(273, 153);
+            this.SaveButton.Location = new System.Drawing.Point(299, 325);
             this.SaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(60, 54);
@@ -258,10 +259,10 @@
             // DeleteButton
             // 
             this.DeleteButton.Image = ((System.Drawing.Image)(resources.GetObject("DeleteButton.Image")));
-            this.DeleteButton.Location = new System.Drawing.Point(548, 349);
+            this.DeleteButton.Location = new System.Drawing.Point(548, 337);
             this.DeleteButton.Margin = new System.Windows.Forms.Padding(2);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(60, 59);
+            this.DeleteButton.Size = new System.Drawing.Size(60, 71);
             this.DeleteButton.TabIndex = 20;
             this.DeleteButton.Text = "Eliminar";
             this.DeleteButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -294,7 +295,7 @@
             // UpdateButton
             // 
             this.UpdateButton.Image = ((System.Drawing.Image)(resources.GetObject("UpdateButton.Image")));
-            this.UpdateButton.Location = new System.Drawing.Point(407, 153);
+            this.UpdateButton.Location = new System.Drawing.Point(299, 128);
             this.UpdateButton.Margin = new System.Windows.Forms.Padding(2);
             this.UpdateButton.Name = "UpdateButton";
             this.UpdateButton.Size = new System.Drawing.Size(60, 54);
@@ -304,11 +305,25 @@
             this.UpdateButton.UseVisualStyleBackColor = true;
             this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
+            // AddButton
+            // 
+            this.AddButton.Image = ((System.Drawing.Image)(resources.GetObject("AddButton.Image")));
+            this.AddButton.Location = new System.Drawing.Point(299, 26);
+            this.AddButton.Margin = new System.Windows.Forms.Padding(2);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(60, 54);
+            this.AddButton.TabIndex = 25;
+            this.AddButton.Text = "Agregar";
+            this.AddButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(616, 418);
+            this.Controls.Add(this.AddButton);
             this.Controls.Add(this.UpdateButton);
             this.Controls.Add(this.IdTextBox);
             this.Controls.Add(this.label10);
@@ -369,5 +384,6 @@
         private System.Windows.Forms.TextBox IdTextBox;
         private System.Windows.Forms.ErrorProvider IdErrorProvider;
         private System.Windows.Forms.Button UpdateButton;
+        private System.Windows.Forms.Button AddButton;
     }
 }
